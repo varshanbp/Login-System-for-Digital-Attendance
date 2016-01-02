@@ -58,6 +58,7 @@ body {
 
 .container {
 	margin-top: 50px;
+
 }
 
 h1 {
@@ -456,3 +457,10 @@ input[type="submit"]:hover {
 }
 
 /*--- Responsinator Code ---*/
+
+/*CUSTOM CODE*/
+.ec1,.ec2{
+	font-family: Oswald-Light;
+	color: #990000;
+	text-decoration: bold;
+}

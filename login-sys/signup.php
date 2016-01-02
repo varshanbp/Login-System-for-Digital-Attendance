@@ -15,7 +15,7 @@ License URL License for CSS files: http://creativecommons.org/licenses/by/3.0/
 <!-- For-Mobile -->
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }  </script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- For-Mobile -->
 <!-- Style Tag-->
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
@@ -25,10 +25,10 @@ License URL License for CSS files: http://creativecommons.org/licenses/by/3.0/
 <h1>Signup/Login</h1>
 	<div class="signin">
      	<form>
-	      	<input type="text" id="uname" class="user" value="Enter Username" oninput="nmCheck()"onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
-              <div class="ec1" id="nmerror"></div>
-					<input type="password" id="pwd" maxlength="6" size="6" class="pass" value="Enter 6 Digit Pin" oninput="pwCheck()"onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
-              <div class="ec2" id="pwerror"></div>
+	      	<input type="text" id="uname" class="user" value="Enter Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
+
+					<input type="password" id="pwd" class="pass" value="Enter 6 Digit Pin" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
+
 					<label>
 		  	</label>
           	<input type="submit" value="LOGIN" />
