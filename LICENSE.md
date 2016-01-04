@@ -1,5 +1,5 @@
-Copyright (c) 2015 by JOHNSON S, SURAJ P, SUVITH KUMAR CV, VARSHAN BP<br>
-JSSV * https://www.jssv.gq/<br>
+Copyright (c) 2015 by JOHNSON S, SURAJ P, SUVITH KUMAR CV, VARSHAN BP
+JSSV * https://www.jssv.gq/
 "JSSV PROJECT - Digitalization to Empower"
 
 All Rights Reserved
