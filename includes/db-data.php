@@ -19,8 +19,8 @@
 # define('DBPASS', 'SPECIFY YOU DATABASE PASSWORD HERE');
 # Tip : Use Password as Complicated as possible.
 #
-# DBNAME - is the Name of the database. Create Database in DBMS(mysql, psql.etc).
-# define('DBNAME', 'SPECIFY YOU DATABASE NAME HERE WHICH IS ALREADY CREATED');
+# DBNAME - is the Name of the database. Specify Name which does not exist.
+# define('DBNAME', 'SPECIFY YOU DATABASE NAME HERE WHICH DOES NOT EXIST');
 # Tip : Use name as short as possible.
 #
 # END OF DOCUMENTATION
@@ -29,6 +29,14 @@
 define('DBHOST', 'localhost');
 define('DBUNAME', 'root');
 define('DBPASS', '');
-define('DBNAME', 'login');
+
+# PREDEFINED VALUES, DO NOT CHANGE UNLESS TABLE OR DATABASE EXIST WITH SAME NAME
+#
+# DATABASE NAME VALUES
+define('DBNAME1', 'login');
+define('DBNAME2', 'login2');
+
+# TABLE NAME VALUES
+define('TBNAME1','auth');
 
  ?>

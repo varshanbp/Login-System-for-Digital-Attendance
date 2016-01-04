@@ -22,23 +22,26 @@ License URL License for CSS files: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
 <div class="container">
-<h1>Signup/Login</h1>
+<h1>Signup</h1>
 	<div class="signin">
-     	<form>
-	      	<input type="text" id="uname" class="user" value="Enter Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
+			<form>
+	      	<input type="text" id="uname" name="uname" class="user" value="Enter Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Username';}" />
 
-					<input type="password" id="pwd" class="pass" value="Enter 6 Digit Pin" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
+					<input type="password" id="pwd" name="pwd" class="pass" value="Enter 6 Digit Pin" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
 
+          <input type="text" id="tname" name="tname" class="user" value="Enter Your Full Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
+
+          <input type="email" id="eid" name="eid" class="user" value="Enter Your Email ID" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
 					<label>
 		  	</label>
           	<input type="submit" value="LOGIN" />
 	 	</form>
+
 	</div>
 </div>
 <div class="footer">
      <p>Copyright &copy; 2015 under Attribution Assurance License. All Rights Reserved | Design by <a href="http://w3layouts.com">W3layouts</a>, <a href="https://www.hweb.in.net">Hyperion Web</a> and modifided by JSSV.</p>
 </div>
 <script src="js/checkform.js"></script>
-<script src="js/snowstorm.js"></script>
 </body>
 </html>
