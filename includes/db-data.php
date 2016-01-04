@@ -34,7 +34,6 @@ define('DBPASS', '');
 #
 # DATABASE NAME VALUES
 define('DBNAME1', 'login');
-define('DBNAME2', 'login2');
 
 # TABLE NAME VALUES
 define('TBNAME1','auth');
