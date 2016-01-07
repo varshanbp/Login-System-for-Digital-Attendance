@@ -2,7 +2,7 @@
 
 
 # This file is used for installation of SQL database.
-# Developers JSSV recommend to use MYSQL 5.5 and above.
+# Developers JSSV recommend to use MYSQL 5.5 and above. This was made based on PHP 7.
 # Please define the values for database.
 # Delete the INSTALL folder after installation for safety purposes.
 #
@@ -34,8 +34,12 @@ define('DBPASS', '');
 #
 # DATABASE NAME VALUES
 define('DBNAME1', 'login');
+define('DBNAME2', 'ma');
 
 # TABLE NAME VALUES
 define('TBNAME1','auth');
+define('TBNAME2','access');
+define('TBNAME3','stulist');
+
 
  ?>

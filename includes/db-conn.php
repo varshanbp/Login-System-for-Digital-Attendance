@@ -8,7 +8,7 @@ require_once('db-data.php');
 $dbname1=DBNAME1;
 $tbname1=TBNAME1;
 
-$sql_conn=mysqli_connect(DBHOST, DBUNAME, DBPASS);
-$sql_sldb=mysqli_select_db($sql_conn, DBNAME1);
+$sql_conn1=mysqli_connect(DBHOST, DBUNAME, DBPASS, DBNAME1);
+$sql_conn2=mysqli_connect(DBHOST, DBUNAME, DBPASS, DBNAME2);
 
  ?>
