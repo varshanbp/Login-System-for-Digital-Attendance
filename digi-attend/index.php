@@ -26,7 +26,9 @@ include('../includes/modals/logout.php');
   <h1>Digital Attendance Portal</h1>
 </header>
 <div class="w3-container">
-
+<?php
+echo "<p><button class='w3-btn w3-deep-purple'>Click here to Add New Student</button></p>";
+ ?>
 </div>
 
 <footer class="w3-container w3-teal">

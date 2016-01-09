@@ -47,6 +47,12 @@
     $res_arr1=mysqli_fetch_assoc($sql_arr2);
     $dept=$res_arr1["department"];
     $vstr=$res_arr1["validate"];
+    # CLOSING ALREADY EXISTING SESSION - START
+    if(isset($_COOKIE['PHPSESSID']))
+      unset($_COOKIE['PHPSESSID']);
+    if(isset($_COOKIE['sid_hash']))
+      unset($_COOKIE['sid_hash']);
+    # CLOSING ALREADY EXISTING SESSION - END
     if($vstr=="N") {
       echo "<p class='w3-xlarge' style='text-align: center;'>Your account has not yet validated.</p>
       <p class='w3-xlarge' style='text-align: center;'>Please Contact HM/HOD/Administrator/Data Base Administrator.</p>";
@@ -55,16 +61,18 @@
       # <!--FOOTER - END-->
       exit();
     }
-    echo "<p class='w3-xlarge' style='text-align: center;'>Successfully Authenticated. Please wait while we redirect you to portal .....</p>";
+    echo "<p class='w3-xlarge' style='text-align: center;'>Successfully Authenticated. Please wait while we redirect you to portal .....</p>
+    <div style='text-align: center;'><i class='material-icons w3-spin w3-jumbo'>refresh</i></div>";
     session_start();
     $_SESSION["uid"] = $uid;
     $_SESSION["dept"] = $dept;
-    $_SESSION["timeout"] = time();
+
     $ssid=session_id();
     $ssid_hash=password_hash($ssid, PASSWORD_DEFAULT);
     setcookie("sid_hash", $ssid_hash, time() + (1800), "/");
-    $url='http://jssv.gq/digi-attend/index.php?dept='.$dept.'&ckname=sid_hash';
-    echo "<meta http-equiv='refresh' content='7;URL=".$url."' />";
+    setcookie("dept", $dept, time() + (1800), "/");
+    $url='http://jssv.gq/digi-attend/index.php?ckname=sid_hash';
+    echo "<meta http-equiv='refresh' content='9;URL=".$url."' />";
   } else {
     echo "<p class='w3-xlarge' style='text-align: center;'>Invalid Username/Password. If have forgotten your password, please reset it in Login/Register page.</p>";
     echo "<p class='w3-large' style='text-align: center;'>Please Wait while we redirect you to Login Page .....</p>";
