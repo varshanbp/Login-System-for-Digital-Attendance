@@ -70,8 +70,9 @@
     $ssid=session_id();
     $ssid_hash=password_hash($ssid, PASSWORD_DEFAULT);
     setcookie("sid_hash", $ssid_hash, time() + (1800), "/");
+    setcookie("ckname", "sid_hash", time() + (1800), "/");
     setcookie("dept", $dept, time() + (1800), "/");
-    $url='http://jssv.gq/digi-attend/index.php?ckname=sid_hash';
+    $url='http://jssv.gq/digi-attend/index.php';
     echo "<meta http-equiv='refresh' content='9;URL=".$url."' />";
   } else {
     echo "<p class='w3-xlarge' style='text-align: center;'>Invalid Username/Password. If have forgotten your password, please reset it in Login/Register page.</p>";

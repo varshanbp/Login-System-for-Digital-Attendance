@@ -27,11 +27,11 @@ License URL License for CSS files: http://creativecommons.org/licenses/by/3.0/
 					<div class="formtitle">Member Login</div>
 					<div class="input">
 						<input type="text" name="uname" id="uname" oninput="nmCheck()" placeholder="Your User Name" style="color: #87aa32;" required />
-					  <span><img id="img1" src="images/close.png"/> </span>
+					  <span><img id="img1" src="images/close.png" alt="wrong/right_button"/> </span>
 					</div>
 					<div class="input">
 						<input type="password" name="pwd" id="pwd" oninput="pwCheck()" placeholder="Your 6 Digit Pin" size="6" maxlength="6" style="color: #e20000;" required />
-						<span><img id="img2" src="images/close.png"/></span>
+						<span><img id="img2" src="images/close.png" alt="wrong/right_button"/></span>
 					</div>
 					<div id="nmerror" class="break"></div>
 					<div id="pwerror" class="break"></div>

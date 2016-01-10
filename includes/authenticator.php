@@ -3,7 +3,7 @@ include('db-conn.php');
 error_reporting(0);
 
 $dept=$_COOKIE["dept"];
-$ckname=$_GET["ckname"];
+$ckname=$_COOKIE["ckname"];
 
 if($_GET["action"]=="lout") {
   $cookie_name = "sid_hash";
